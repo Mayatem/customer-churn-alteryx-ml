@@ -1,0 +1,447 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ModifiedChurnDataset.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Gender" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Senior Citizen" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Tenure Months" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Phone Service" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Multiple Lines" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Internet Service" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Online Security" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Online Backup" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Device Protection" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Tech Support" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Streaming TV" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Streaming Movies" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Contract" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Paperless Billing" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Payment Method" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Monthly Charges" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Total Charges" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="CLTV" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Churn Label" source="File: C:\Users\nmele\Downloads\ModifiedChurnDataset.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Gender" selected="True" type="Int64" size="8" />
+            <SelectField field="Senior Citizen" selected="True" type="Int64" size="8" />
+            <SelectField field="Tenure Months" selected="True" type="Int64" size="8" />
+            <SelectField field="Phone Service" selected="True" type="Int64" size="8" />
+            <SelectField field="Multiple Lines" selected="True" type="Int64" size="8" />
+            <SelectField field="Internet Service" selected="True" type="Int64" size="8" />
+            <SelectField field="Online Security" selected="True" type="Int64" size="8" />
+            <SelectField field="Online Backup" selected="True" type="Int64" size="8" />
+            <SelectField field="Device Protection" selected="True" type="Int64" size="8" />
+            <SelectField field="Tech Support" selected="True" type="Int64" size="8" />
+            <SelectField field="Streaming TV" selected="True" type="Int64" size="8" />
+            <SelectField field="Streaming Movies" selected="True" type="Int64" size="8" />
+            <SelectField field="Contract" selected="True" type="Int64" size="8" />
+            <SelectField field="Paperless Billing" selected="True" type="Int64" size="8" />
+            <SelectField field="Payment Method" selected="True" type="Float" size="4" />
+            <SelectField field="Monthly Charges" selected="True" type="Int64" size="8" />
+            <SelectField field="Total Charges" selected="True" type="Int64" size="8" />
+            <SelectField field="CLTV" selected="True" type="Int64" size="8" />
+            <SelectField field="Churn Label" selected="True" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings>
+        <Position x="246" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="estimation pct">70</Value>
+          <Value name="validation pct">30</Value>
+          <Value name="rand seed">1</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings>
+        <Position x="378" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Model Name">Decision_Tree_24</Value>
+          <Value name="Y Var">Churn Label</Value>
+          <Value name="X Vars">Gender + Senior Citizen + Tenure Months + Phone Service + Multiple Lines + Internet Service + Online Security + Online Backup + Device Protection + Tech Support + Streaming TV + Streaming Movies + Contract + Paperless Billing + Payment Method + Monthly Charges + Total Charges + CLTV</Value>
+          <Value name="use.weights">True</Value>
+          <Value name="select.weights">Senior Citizen</Value>
+          <Value name="cp">0</Value>
+          <Value name="select.type">True</Value>
+          <Value name="classification">True</Value>
+          <Value name="use.gini">True</Value>
+          <Value name="use.information">False</Value>
+          <Value name="regression">False</Value>
+          <Value name="min.split">20</Value>
+          <Value name="min.bucket">5</Value>
+          <Value name="usesurrogate.0">True</Value>
+          <Value name="usesurrogate.1">False</Value>
+          <Value name="usesurrogate.2">False</Value>
+          <Value name="total.correct">True</Value>
+          <Value name="percent.correct">False</Value>
+          <Value name="xval.folds">10</Value>
+          <Value name="max.depth">5</Value>
+          <Value name="max.bins" />
+          <Value name="tree.plot">False</Value>
+          <Value name="Counts">True</Value>
+          <Value name="Proportions">False</Value>
+          <Value name="Branch Dist">False</Value>
+          <Value name="tree.inches">True</Value>
+          <Value name="tree.in.w">5.50</Value>
+          <Value name="tree.in.h">5.50</Value>
+          <Value name="tree.centimeters">False</Value>
+          <Value name="tree.cm.w">13.00</Value>
+          <Value name="tree.cm.h">14.95</Value>
+          <Value name="tree.graph.resolution">1x</Value>
+          <Value name="tree.pointsize">8</Value>
+          <Value name="prune.plot">False</Value>
+          <Value name="prune.inches">True</Value>
+          <Value name="prune.in.w">5.50</Value>
+          <Value name="prune.in.h">5.50</Value>
+          <Value name="prune.centimeters">False</Value>
+          <Value name="prune.cm.w">13.00</Value>
+          <Value name="prune.cm.h">14.95</Value>
+          <Value name="prune.graph.resolution">1x</Value>
+          <Value name="prune.pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Decision Tree In-DB (24)</Name>
+          <AnnotationText>Decision_Tree_24</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Decision_Tree.yxmc" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="546" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\nmele\AppData\Local\Temp\Alteryx\Engine_13468_818f4c3a6bff4beabad79ab50f21dff9_\Engine_13468_e3ba82c7acf14f91aa506fb3784113fb~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="546" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\nmele\AppData\Local\Temp\Alteryx\Engine_13468_818f4c3a6bff4beabad79ab50f21dff9_\Engine_13468_3c4ba8640eeb4153ae9b9b4acd766225~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="546" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\nmele\AppData\Local\Temp\Alteryx\Engine_13468_818f4c3a6bff4beabad79ab50f21dff9_\Engine_13468_75822c97616e45a7917071b3dcb0e64c~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="Score">
+        <Position x="402" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">
+          </Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="546" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\nmele\AppData\Local\Temp\Alteryx\Engine_13468_818f4c3a6bff4beabad79ab50f21dff9_\Engine_13468_fa2d4c99bff44f258fcd378b3d89e8e4~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>LR</ViewMode>
+            <ViewSize value="46" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints />
+            </View2>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="JupyterCode">
+        <Position x="414" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <WorkflowName>c:\users\nmele\documents\data5500\tem_project3_decisiontree.yxmd</WorkflowName>
+          <JupyterProduction>false</JupyterProduction>
+          <vEnvName>designerbasetools_venv</vEnvName>
+          <DefaultVenv>1</DefaultVenv>
+          <productionModeScript />
+          <Port>58891</Port>
+          <JupyterGuidDir>0e4a71b0f97bc173897b9beb12814181</JupyterGuidDir>
+          <JupyterGuidCopy />
+          <LastExecutedByEngineVersion>2024.2.1.193</LastExecutedByEngineVersion>
+          <Notebook><![CDATA[{"cells":[{"cell_type":"markdown","metadata":{"ayx":{"cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","contents_keyword":"Alteryx.help()","label":"info"}},"source":["Run `Alteryx.help()` for info about useful functions.  \n","i.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")`"]},{"cell_type":"code","execution_count":1,"metadata":{"ayx":{"cell_css":"border: 1px solid #58a; margin: 2px;","contents_keyword":"installPackages","label":"deps"},"execution":{"iopub.execute_input":"2026-02-25T05:08:06.527191Z","iopub.status.busy":"2026-02-25T05:08:06.527191Z","iopub.status.idle":"2026-02-25T05:08:09.721035Z","shell.execute_reply":"2026-02-25T05:08:09.721035Z"}},"outputs":[],"source":["# List all non-standard packages to be imported by your \n","# script here (only missing packages will be installed)\n","from ayx import Package\n","#Package.installPackages(['pandas','numpy'])\n","import pandas as pd\n","import numpy as np\n","import seaborn as sns\n","from sklearn import tree\n","from sklearn import preprocessing\n","import matplotlib.pyplot as plt"]},{"cell_type":"code","execution_count":2,"metadata":{"execution":{"iopub.execute_input":"2026-02-25T05:08:09.721035Z","iopub.status.busy":"2026-02-25T05:08:09.721035Z","iopub.status.idle":"2026-02-25T05:08:09.815908Z","shell.execute_reply":"2026-02-25T05:08:09.815908Z"}},"outputs":[],"source":["from ayx import Alteryx\n","\n"]},{"cell_type":"code","execution_count":3,"metadata":{"execution":{"iopub.execute_input":"2026-02-25T05:08:09.815908Z","iopub.status.busy":"2026-02-25T05:08:09.815908Z","iopub.status.idle":"2026-02-25T05:08:09.879958Z","shell.execute_reply":"2026-02-25T05:08:09.879958Z"}},"outputs":[],"source":["df = Alteryx.read(\"#1\")\n","Alteryx.write(df, 1)"]},{"cell_type":"code","execution_count":4,"metadata":{"execution":{"iopub.execute_input":"2026-02-25T05:08:09.911787Z","iopub.status.busy":"2026-02-25T05:08:09.911787Z","iopub.status.idle":"2026-02-25T05:08:09.959642Z","shell.execute_reply":"2026-02-25T05:08:09.959642Z"}},"outputs":[],"source":["from ayx import Alteryx\n","import pandas as pd\n","\n","\n","df = Alteryx.read(\"#1\")\n","\n","\n","y_true = df[\"Churn.Label\"].astype(int)\n","y_prob = df[\"Score_1\"] \n","\n","\n","y_pred = (y_prob >= 0.5).astype(int)\n","\n","\n","tp = ((y_true == 1) & (y_pred == 1)).sum()\n","tn = ((y_true == 0) & (y_pred == 0)).sum()\n","fp = ((y_true == 0) & (y_pred == 1)).sum()\n","fn = ((y_true == 1) & (y_pred == 0)).sum()\n","\n","\n","accuracy = (y_true == y_pred).mean()\n","precision_1 = tp / (tp + fp) if (tp + fp) > 0 else 0\n","recall_1 = tp / (tp + fn) if (tp + fn) > 0 else 0\n","\n","results = pd.DataFrame({\n","    \"metric\": [\"accuracy\", \"True Positive\", \"True Negative\", \"False Positive\", \"False Negative\", \"precision_churn\", \"recall_churn\"],\n","    \"value\": [accuracy, tp, tn, fp, fn, precision_1, recall_1]\n","})\n","\n","print(results)\n","\n","Alteryx.write(results, 1)\n"]},{"cell_type":"code","execution_count":5,"metadata":{"execution":{"iopub.execute_input":"2026-02-25T05:08:09.962921Z","iopub.status.busy":"2026-02-25T05:08:09.962921Z","iopub.status.idle":"2026-02-25T05:08:10.149069Z","shell.execute_reply":"2026-02-25T05:08:10.149069Z"}},"outputs":[],"source":["from ayx import Alteryx\n","import pandas as pd\n","import seaborn as sns\n","import matplotlib.pyplot as plt\n","from sklearn.metrics import confusion_matrix\n","\n","df = Alteryx.read(\"#1\")\n","\n","y_true = df[\"Churn.Label\"].astype(int)\n","y_prob = df[\"Score_1\"]\n","y_pred = (y_prob >= 0.5).astype(int)\n","\n","\n","cm = confusion_matrix(y_true, y_pred)\n","cm_df = pd.DataFrame( cm,\n","    columns=[\"Pred 0\", \"Pred 1\"],\n","    index=[\"Actual 0\", \"Actual 1\"]\n",")\n","\n","plt.figure(figsize=(6, 4))\n","sns.heatmap(cm_df, annot=True, fmt=\"d\", cmap=\"Blues\")\n","plt.title(\"Confusion Matrix (Decision Tree - Test Set)\")\n","plt.ylabel(\"Actual\")\n","plt.xlabel(\"Predicted\")\n","plt.tight_layout()\n","\n","plt.show()\n","\n","\n","chart_path = Alteryx.getWorkflowConstant(\"Engine.TempFilePath\") + \"confusion_matrix.png\"\n","chart_path = chart_path.replace(\"\\\\\", \"/\")\n","plt.savefig(chart_path, dpi=150)\n","\n","Alteryx.write(pd.DataFrame([chart_path], columns=[\"chart_path\"]), 1)\n"]},{"cell_type":"code","execution_count":6,"metadata":{"execution":{"iopub.execute_input":"2025-11-27T06:30:18.788961Z","iopub.status.busy":"2025-11-27T06:30:18.788961Z","iopub.status.idle":"2025-11-27T06:30:18.899750Z","shell.execute_reply":"2025-11-27T06:30:18.899750Z"}},"outputs":[],"source":[]}],"metadata":{"kernelspec":{"display_name":"designerbasetools_venv","language":"python","name":"designerbasetools_venv"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.10.13"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output1">
+          <RecordInfo>
+            <Field name="chart_path" size="1073741823" source="PythonTool:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxJupyterPluginEngine.dll" EngineDllEntryPoint="AlteryxJupyter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Estimation" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Validation" />
+      <Destination ToolID="28" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="28" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Reports" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Interactive" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ChurnDataset_decisionTree</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a1fc9ba2-bcba-4ca6-86e8-a75810e9fddc" />
+      <Telemetry>
+        <PreviousWorkflowId value="7c260dc7-5a89-44e4-bda8-18598a2f5869" />
+        <OriginWorkflowId value="c156b8da-368c-43f8-8d67-b556afc2c143" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

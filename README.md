@@ -1,7 +1,7 @@
 # 📊 Customer Churn Prediction
 ### Alteryx | Decision Tree | Neural Networks
 ## Model Output Preview
-![Decision Tree](images/decision_tree_structure.png)
+![Decision Tree](decision_tree_structure.png)
 
 ## 📌 Project Overview
 
@@ -52,6 +52,8 @@ The dataset was split into 70% training and 30% test sets.
 
 Full workflow file included in this repository.
 
+![Model Workflow](model_setup.png)
+
 ## 🌳 Model 1: Decision Tree
 - Gini Index splitting
 - Maximum depth = 5 (to avoid overfitting)
@@ -81,6 +83,7 @@ Two architectures were tested:
 - Signs of overfitting
 - Higher objective function value
 
+![Confusion Matrix](confusion_matrix.png)
 **Key Insight:**
 
 The simpler 3-layer network outperformed the deeper model, suggesting that increasing complexity did not improve generalization for this dataset.
@@ -92,6 +95,7 @@ The simpler 3-layer network outperformed the deeper model, suggesting that incre
 | Neural Net (3-layer)	| 0.816	Best overall performance |
 | Neural Net (10-layer)	| 0.784	Overfitting observed |
 
+![Residual Comparison](residual_comparison.png)
 ## 📈 Key Insights
 - Long-term contracts reduce churn probability.
 - Short tenure customers are at higher risk.
